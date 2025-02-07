@@ -99,3 +99,13 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
+
+#  foss:
+#    name: foss-scanning
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@master
+#      - name: Run Snyk to check for vulnerabilities
+#        uses: snyk/actions/golang@master
+#        env:
+#          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
