@@ -89,11 +89,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
       - name: Build an image from Dockerfile
-        run: docker build -t tmp:${{ github.sha }} .
+        run: docker build -t ghcr.io/xorima/example-repo:${{ github.sha }} .
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.28.0
         with:
-          image-ref: 'tmp:${{ github.sha }} '
+          image-ref: 'ghcr.io/xorima/example-repo:${{ github.sha }}'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
