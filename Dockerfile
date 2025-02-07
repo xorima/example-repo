@@ -1,4 +1,4 @@
-FROM golang:latest AS builder
+FROM golang:latest@sha256:927112936d6b496ed95f55f362cc09da6e3e624ef868814c56d55bd7323e0959 AS builder
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
