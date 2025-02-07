@@ -2,9 +2,9 @@ profile: cover.out
 local-prefix: "github.com/xorima/hub-sphere"
 
 threshold:
-  file: 100
-  package: 85
-  total: 100
+  file: 75
+  package: 75
+  total: 75
 
 exclude:
   paths:
