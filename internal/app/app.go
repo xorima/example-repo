@@ -33,6 +33,7 @@ func NewApp() *App {
 }
 
 func (a *App) Run() error {
+	a.log.Info("server started on 8080")
 	return http.ListenAndServe(":8080", a.router)
 }
 

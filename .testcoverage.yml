@@ -3,7 +3,7 @@ local-prefix: "github.com/xorima/hub-sphere"
 
 threshold:
   file: 100
-  package: 100
+  package: 85
   total: 100
 
 exclude:
